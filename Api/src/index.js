@@ -1,11 +1,14 @@
 import express from "express";
 import cors from "cors";
 import "dotenv/config";
-import { connection } from "./repository/connection.js";
+import userController from './controller/userController.js'
 
 const router = express();
 router.use(express.json());
 router.use(cors());
+
+//endpoints configs
+router.use(userController);
 
 
 

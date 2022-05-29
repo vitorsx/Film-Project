@@ -1,0 +1,65 @@
+
+(1)
+
+/POST   /user/login
+
+request
+{
+    "email": "",
+    "senha": ""
+}
+
+response
+{
+    "id": 0,
+    "email": "",
+    "nome": ""
+}
+
+
+(2)
+
+/POST   /filme/
+
+request
+{
+    "nome": "",
+    "sinopse": "",
+    "avaliacao": 0.0,
+    "lancamento": "",
+    "disponivel": true,
+    "imagem": "",
+    "id_user": 0
+}
+
+response
+{
+    "id_filme": 1,
+    "nome": "",
+    "sinopse": "",
+    "avaliacao": 0.0,
+    "lancamento": "",
+    "disponivel": true,
+    "imagem": "",
+    "id_user": 0
+}
+
+(3)
+
+/PUT   /filme/:id
+
+request
+{
+    "nome": "",
+    "sinopse": "",
+    "avaliacao": 0.0,
+    "lancamento": "",
+    "disponivel": true,
+    "imagem": "",
+    "id_user": ""
+}
+
+response status: 204 (ok, but no content)
+{
+    [no content] 
+}
